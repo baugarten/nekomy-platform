@@ -769,7 +769,7 @@ class Admin extends Component {
                     hidden: (this.state.type === 'users')
                   })} ref="title-input" placeholder={(this.state.type === 'activities')
                     ? 'Activity title'
-                    : `${this.state.type.slice(0, -1)} title`} value={title} onChange={event => this.updateInput(event, 'title')}
+                    : `${Helpers.capitalize(this.state.type.slice(0, -1))} title`} value={title} onChange={event => this.updateInput(event, 'title')}
                 />
                 <input
                   type="text"

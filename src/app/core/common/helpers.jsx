@@ -21,11 +21,10 @@ $.fn.extend({
   }
 });
 
-// String capitalization
-String.prototype.capitalize = () => (this ? this.charAt(0).toUpperCase() + this.slice(1) : null);
-
 // Common app methods
 module.exports = {
+
+  capitalize: str => str.charAt(0).toUpperCase() + str.slice(1),
 
   renderCards: (type, props) => {
     let newList = [];
