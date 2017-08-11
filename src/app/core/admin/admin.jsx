@@ -425,7 +425,7 @@ class Admin extends Component {
       newItem = _.omit(this.state.selectedItem, [prop]);
     }
 
-    if (!isEmpty(newItem) && JSON.stringify(newItem) !== JSON.stringify(this.state.selectedItem)) {
+    if (JSON.stringify(newItem) !== JSON.stringify(this.state.selectedItem)) {
       this.setState({
         selectedItem: newItem
       }, () => {
