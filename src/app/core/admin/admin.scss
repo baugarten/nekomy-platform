@@ -175,6 +175,7 @@
 	}
 	
 	.block:not(.pages):not(.files) .title-input {
+		text-transform: capitalize;
 		width: 75%;
 	}
 	
